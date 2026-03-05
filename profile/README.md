@@ -12,9 +12,9 @@ Formalization of the Osterwalder-Schrader axioms for the Gaussian free field in 
 
 Formalization of the Osterwalder-Schrader reconstruction theorem — the mathematical bridge between Euclidean and relativistic QFT. Includes supporting infrastructure in von Neumann algebra theory (Tomita-Takesaki modular theory, KMS condition, Stone's theorem), several complex variables (tube domains, Hartogs' theorem, Bochner tube theorem, edge-of-the-wedge), complex Lie groups (Bargmann-Hall-Wightman theorem), and the full Wightman axioms with GNS construction and analytic continuation. ~99 sorries remaining across four modules.
 
-### [Phi4](https://github.com/FormalQFT/Phi4) — *completely proved*
+### [Phi4](https://github.com/FormalQFT/Phi4) — *proof underway*
 
-Formal construction of the phi^4_2 Euclidean quantum field theory in Lean 4 (0 sorries, 0 axioms). Follows the Glimm-Jaffe program: finite-volume construction with Nelson-Symanzik estimates, infinite-volume limit, verification of the Osterwalder-Schrader axioms (with explicit weak-coupling handling for OS4), and reconstruction of the corresponding Wightman theory. Includes formalized Feynman graph combinatorics, Bessel function estimates, and Green function infrastructure.
+Formal construction of the phi^4_2 Euclidean quantum field theory in Lean 4, following the Glimm-Jaffe program. The conditional architecture is in place: finite-volume construction, infinite-volume limit, OS axiom verification, and Wightman reconstruction, with Feynman graph combinatorics and Green function infrastructure. 0 sorry statements and 0 axiom declarations, but ~58 uninstantiated Model interfaces and 10 gap_* frontier theorems encode the remaining hard analytic estimates (Nelson-Symanzik bounds, correlation inequalities, Theorem 8.6.2 core).
 
 ### [GFF4D](https://github.com/FormalQFT/GFF4D) — *completely proved*
 
@@ -24,7 +24,7 @@ Lean 4 formalization of the Gaussian free field in four dimensions. 0 sorries, 0
 
 Construction of the P(phi)_2 quantum field theory in Lean 4 — an interacting scalar field in two spacetime dimensions. This is a key test case for rigorous QFT, following the constructive approach of Glimm-Jaffe and Simon where non-Gaussian measures are built via exponential tilting of the free field.
 
-### [gaussian-field](https://github.com/FormalQFT/gaussian-field) — *completely proved*
+### [gaussian-field](https://github.com/FormalQFT/gaussian-field) — *core proved, extensions underway*
 
 A general-purpose Lean 4 library for constructing centered Gaussian probability measures on duals of nuclear Frechet spaces. Given a nuclear Frechet space E and a continuous linear map T : E -> H into a separable Hilbert space, constructs the measure on the weak dual E' with characteristic functional exp(-||T(f)||^2/2). Application-agnostic foundation for the GFF, stochastic PDEs, and infinite-dimensional probability.
 
