@@ -20,9 +20,9 @@ Formal construction of the phi^4_2 Euclidean quantum field theory in Lean 4, fol
 
 Lean 4 formalization of the Gaussian free field in four dimensions. 0 sorries, 0 custom axioms. The `main` branch constructs the GFF as a Gaussian measure on distributions and establishes its basic properties. The `bochner` branch develops an alternative construction via Bochner's theorem and characteristic functionals.
 
-### [pphi2](https://github.com/FormalQFT/pphi2) — *under construction*
+### [pphi2](https://github.com/FormalQFT/pphi2) — *proof underway*
 
-Construction of the P(phi)_2 quantum field theory in Lean 4 — an interacting scalar field in two spacetime dimensions. This is a key test case for rigorous QFT, following the constructive approach of Glimm-Jaffe and Simon where non-Gaussian measures are built via exponential tilting of the free field.
+Construction of the P(phi)_2 quantum field theory in Lean 4 — an interacting scalar field in two spacetime dimensions, following the Glimm-Jaffe/Nelson lattice approach. All six phases (lattice measure, transfer matrix, spectral gap, continuum limit, Euclidean invariance, assembly) are structurally complete with 0 sorries. 44 axiom declarations encode the remaining analytic inputs. The torus continuum limit is further along: OS axioms OS0-OS3 are fully proved for the Gaussian case, with the interacting case in progress.
 
 ### [gaussian-field](https://github.com/FormalQFT/gaussian-field) — *core proved, extensions underway*
 
