@@ -35,3 +35,9 @@ Formal proofs of Bochner's theorem and Minlos' theorem in Lean 4 — the two fou
 ### [stochasticpde-itocalculus](https://github.com/FormalQFT/stochasticpde-itocalculus)
 
 Complete, sorry-free formalization of the Ito formula in Lean 4 (~24k lines). Builds stochastic integrals as L^2 limits of simple process integrals, proves the Ito isometry, Kolmogorov-Chentsov continuous modification theorem, quadratic variation convergence, and the full Ito formula: the remainder M_t = f(t,X_t) - f(0,X_0) - integral of the Ito drift is a martingale.
+
+## Future Projects
+
+- **FormalQFT meta-repo** — A unified Lean package that combines all QFT repositories into a single importable library. Will verify cross-repo compatibility and provide a one-line `require FormalQFT` for downstream users.
+
+- **Automated Lean/Mathlib updater** — Org-wide CI infrastructure to track stable Lean 4 releases, find matching Mathlib commits, and automatically create PRs updating each repository. Keeps the entire org on a consistent, tested toolchain.
